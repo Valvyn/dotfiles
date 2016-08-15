@@ -1,0 +1,56 @@
+xvt.saveLines: 10000
+
+XTerm*termName: xterm-256color
+URxvt*termName: rxvt-unicode
+URxvt*loginShell:  true
+
+URxvt.scrollBar: false
+URxvt.secondaryScroll: true
+URxvt.font: xft:Source Code Pro for Powerline:size=11
+URxvt.letterSpace: -1
+
+URxvt*cursorUnderline: true
+
+URxvt.transparent: false
+URxvt*inheritPixmap: false
+URxvt*shading: 0
+
+! Make URLs clickable
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/chromium
+URxvt.matcher.button: 1
+
+! Color Re-definitions
+URxvt.foreground: black
+URxvt.background: #fdf6e3
+! Black + DarkGrey
+URxvt*color0:  #000000
+URxvt*color8:  #4c4c4c
+! DarkRed + Red
+URxvt*color1:  #ff0000
+URxvt*color9:  #ff9999
+! DarkGreen + Green
+URxvt*color2:  #008000
+URxvt*color10: #00AA00
+! DarkYellow + Yellow
+URxvt*color3:  #eab93d
+URxvt*color11: #e5ad1f
+! DarkBlue + Blue
+URxvt*color4:  #204a87
+URxvt*color12: #3465a4
+! DarkMagenta + Magenta
+URxvt*color5:  #990099
+URxvt*color13: #FF00FF
+!DarkCyan + Cyan (both not tango)
+URxvt*color6:  #00b2b2
+URxvt*color14: #00E5E5
+! LightGrey + White
+URxvt*color7:  #b2b2b2
+URxvt*color15: #ffffff
+
+! :Bind C-0, C-+ and C-= to activate small, medium, and big font size resp.
+URxvt.keysym.C-0: command:\033]710;xft:Source Code Pro for Powerline:size=11\007
+URxvt.keysym.C-minus: command:\033]710;xft:Source Code Pro for Powerline:size=8\007
+URxvt.keysym.C-equal: command:\033]710;xft:Source Code Pro for Powerline:size=13\007
+
+URxvt.colorUL: #4682B4
