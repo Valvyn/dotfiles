@@ -1,5 +1,8 @@
 # Path to your oh-my-zsh installation.
   export ZSH=/home/friedrich/.oh-my-zsh
+  export GOPATH=~/code/go
+
+  cd /home/friedrich/code/kaeuferportal/
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -85,6 +88,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+alias c2g='cd /home/friedrich/code/go/src/codevault.io'
+
+export PATH="$PATH:$HOME/.rvm/bin:$GOPATH/bin" # Add RVM to PATH for scripting
 
 [ -z "$DISPLAY" -a "$(fgconsole)" -eq 1 ] && exec startx
