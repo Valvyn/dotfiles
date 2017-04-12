@@ -2,6 +2,12 @@
   export ZSH=/home/friedrich/.oh-my-zsh
   export GOPATH=~/code/go
 
+  export SQL_HOST=XXXX
+  export SQL_PORT=XXXX
+  export SQL_DATABASE=XXXX
+  export SQL_USER=XXXXX
+  export SQL_PASSWORD=XXXXX
+
   cd /home/friedrich/code/kaeuferportal/
 
 # Set name of the theme to load.
@@ -89,7 +95,16 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias c2g='cd /home/friedrich/code/go/src/codevault.io'
+alias gap='git add -p'
+alias gpl='git pull'
+alias be='bundle exec'
+alias gps='git push'
 
 export PATH="$PATH:$HOME/.rvm/bin:$GOPATH/bin" # Add RVM to PATH for scripting
-
+export PATH="$PATH:`yarn global bin`"
 [ -z "$DISPLAY" -a "$(fgconsole)" -eq 1 ] && exec startx
+
+
+prompt_dir () {
+    prompt_segment blue black '~'
+}
